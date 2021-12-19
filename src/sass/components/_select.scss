@@ -1,0 +1,45 @@
+.container-label {
+  margin-bottom: 1.5em;
+  text-align: center;
+  font-size: 1rem;
+  & .label-txt1 {
+    margin-bottom: 1.5em;
+    @include for-size(tablet) {
+      font-size: 1.2rem;
+    }
+  }
+}
+.label-txt2 {
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+.link-login {
+  font-size: 1em;
+  font-weight: bold;
+  color: $link-hover;
+  margin-left: 0.3em;
+}
+.select {
+  text-align: center;
+}
+select {
+  height: 2rem;
+  width: 12rem;
+  margin-bottom: 1.5em;
+  cursor: pointer;
+  background-color: $select;
+  border-radius: 0.4em;
+  border: 0.01em solid #ccc;
+  @include for-size(desktop-only) {
+    width: 21rem;
+  }
+}
+option {
+  text-align: center;
+}
+select option {
+  @include for-size(desktop-only) {
+    @include optionFontSize(1.2rem);
+  }
+}
+

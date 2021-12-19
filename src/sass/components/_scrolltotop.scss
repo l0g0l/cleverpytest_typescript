@@ -1,0 +1,30 @@
+.container-scroll {
+  position: absolute;
+  top: 27rem;
+  right: 1.6rem;
+  background-color: transparent !important;
+  @include for-size(desktop-only) {
+    right: 2rem;
+  }
+}
+#arrowfixed {
+  background-color: transparent !important;
+  position: fixed;
+  .scrollup {
+    width: 60%;
+    animation-name: arrow;
+    cursor: pointer;
+    @include for-size(desktop-only) {
+      width: 85%;
+    }
+  }
+  @keyframes arrow {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translate(0 -10px);
+    }
+  }
+}

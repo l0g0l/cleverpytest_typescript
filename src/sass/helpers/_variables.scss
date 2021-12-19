@@ -1,0 +1,34 @@
+//=========== Fonts ==============
+
+@font-face {
+  font-family: "ubuntu";
+  src: url("../../assets/fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
+  font-style: normal;
+  unicode-range: "U+0-10FFFF";
+}
+
+$mainfont: ubuntu, "Courier New", monospace, sans-serif;
+
+//=========== Colors ==============
+
+/* HXD */
+$darkgrey-color: #34424b;
+$link-hover: #fd197c;
+$link: #cf385b;
+$alert: #db3e3e;
+$logo2: #44285f;
+
+//============ Options ==============
+$select: #fff;
+$optionAll: #ffff;
+$option1: #6f4794;
+$option2: #91724d;
+$option3: #91a80c;
+$option4: #967403;
+$option5: #3b6422;
+$option6: #389c94;
+$option7: #c27b41;
+$option8: #4543c5;
+$option9: #3a3d3c;
+$option10: #b32f4e;
+

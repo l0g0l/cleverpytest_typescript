@@ -1,0 +1,16 @@
+.btn-home {
+  display: flex;
+  justify-content: center;
+}
+.container-cards {
+  @include for-size(desktop-only) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.cards {
+  @include for-size(desktop-only) {
+    width: 48%;
+    margin: 0.7em;
+  }
+}

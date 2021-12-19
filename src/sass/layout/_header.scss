@@ -1,0 +1,14 @@
+.container-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+  & .logo {
+    font-size: 5rem;
+    cursor: pointer;
+  }
+  & .logo2 {
+    font-size: 1.5rem;
+    color: $logo2;
+  }
+}
