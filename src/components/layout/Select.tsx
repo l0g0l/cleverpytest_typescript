@@ -1,11 +1,21 @@
+import { ChangeEvent } from 'react';
 import { Link } from 'react-router-dom'
+import {User} from './index';
 
 
-const Select = ({ setuserfilter, datausers }) => {
 
-    const handleChange = (event) => {
+interface props {
+    setuserfilter: Function
+    datausers:[]
+}
 
-        setuserfilter(event.target.value)
+
+const Select = ({ setuserfilter, datausers }:props) => {
+
+    const handleChange = ({target}: ChangeEvent<HTMLSelectElement>) => {
+        const {value}=target
+
+        setuserfilter(value)
     }
 
     //doing this .map of datausers show in the each option the name of de user
@@ -17,7 +27,7 @@ const Select = ({ setuserfilter, datausers }) => {
             <div className="select">
                 <select name="users" id="users" onChange={handleChange}>
                     <option value="All" className="option1">All</option>
-                    {datausers.map((item => {
+                    {datausers.map(((item:User) => {
                         return (
                             <option style={{ color: item.color }} value={item.id} key={item.id}>{item.name}</option>
                         )
