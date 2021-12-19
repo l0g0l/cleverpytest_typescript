@@ -1,13 +1,12 @@
 //Definimos los tipos de Actions, definimos la funcion del Reducer y 
-import {Actions }from '../actions/index'
-import {ActionType}from '../actions-types/index'
-import {combineReducers} from 'redux';
-import {Post} from '../../components/layout/index';
+import { Actions } from '../actions/index'
+import { ActionType } from '../actions-types/index'
+import { combineReducers } from 'redux';
+import { Post } from '../../components/layout/index';
 
 
 
-
-export function removePost(post:number) {
+export function removePost(post: number) {
     // console.log(post)
     return {
         type: ActionType.REMOVE_POST,
@@ -18,7 +17,7 @@ export function removePost(post:number) {
 
 //Dispatch es la manera de poder actualizar el store
 //Reducer. Inicilizamos el state siempre, en este caso con un obj de posts [] y varaible de control que nos sirve para saber si los post están vacíos o no (false) y necesita el action como parámetros obligatorios
-function posts(state = { posts:[], posts_loaded: false }, action:Actions) {
+function posts(state = { posts: [], posts_loaded: false }, action: Actions) {
     switch (action.type) {
         case ActionType.LOAD_POSTS: //Action
             return {
@@ -33,7 +32,7 @@ function posts(state = { posts:[], posts_loaded: false }, action:Actions) {
                 posts_loaded: action.posts_loaded
             };
         case ActionType.REMOVE_POST://Action
-            const filtered = state.posts.filter((a:Post) => a.id !== action.post)
+            const filtered = state.posts.filter((a: Post) => a.id !== action.post)
             return {
                 posts: [...filtered],
                 posts_loaded: true
@@ -43,7 +42,7 @@ function posts(state = { posts:[], posts_loaded: false }, action:Actions) {
     }
 }
 //Reducer
-function users(state = { users: [], users_loaded: false }, action:Actions) {
+function users(state = { users: [], users_loaded: false }, action: Actions) {
     switch (action.type) {
         case ActionType.LOAD_USERS:
             return {
@@ -62,7 +61,7 @@ function users(state = { users: [], users_loaded: false }, action:Actions) {
     }
 }
 //Reducer
-function comments(state = { comments: [], comments_loaded: false }, action:Actions) {
+function comments(state = { comments: [], comments_loaded: false }, action: Actions) {
     switch (action.type) {
         case ActionType.LOAD_COMMENTS:
             return {
@@ -81,7 +80,7 @@ function comments(state = { comments: [], comments_loaded: false }, action:Actio
     }
 }
 //Este reducer lo creo en false para guardarlo así en el store
-function login(state = { is_logged: false }, action:Actions) {
+function login(state = { is_logged: false }, action: Actions) {
     switch (action.type) {
         case ActionType.LOGIN: //Action
             return {
@@ -102,7 +101,7 @@ function login(state = { is_logged: false }, action:Actions) {
 export const postApp = combineReducers({
     posts: posts,
     users: users,
-    comments:comments,
+    comments: comments,
     login: login
 });
 
