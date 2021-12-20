@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/cleverpytest/static/css/main.ab4b7f6d.chunk.css",
-    "main.js": "/cleverpytest/static/js/main.293d2775.chunk.js",
-    "main.js.map": "/cleverpytest/static/js/main.293d2775.chunk.js.map",
-    "runtime-main.js": "/cleverpytest/static/js/runtime-main.5a8e133c.js",
-    "runtime-main.js.map": "/cleverpytest/static/js/runtime-main.5a8e133c.js.map",
-    "static/js/2.f3a390be.chunk.js": "/cleverpytest/static/js/2.f3a390be.chunk.js",
-    "static/js/2.f3a390be.chunk.js.map": "/cleverpytest/static/js/2.f3a390be.chunk.js.map",
-    "index.html": "/cleverpytest/index.html",
-    "static/css/main.ab4b7f6d.chunk.css.map": "/cleverpytest/static/css/main.ab4b7f6d.chunk.css.map",
-    "static/js/2.f3a390be.chunk.js.LICENSE.txt": "/cleverpytest/static/js/2.f3a390be.chunk.js.LICENSE.txt",
-    "static/media/main.scss": "/cleverpytest/static/media/Ubuntu-Regular.fbdecfce.ttf",
-    "static/media/home.400c509f.png": "/cleverpytest/static/media/home.400c509f.png",
-    "static/media/infoC.b5e8f051.png": "/cleverpytest/static/media/infoC.b5e8f051.png",
-    "static/media/papeN.25f520c4.png": "/cleverpytest/static/media/papeN.25f520c4.png"
+    "main.css": "/cleverpytest_typescript/static/css/main.597ff3a8.chunk.css",
+    "main.js": "/cleverpytest_typescript/static/js/main.f5892512.chunk.js",
+    "main.js.map": "/cleverpytest_typescript/static/js/main.f5892512.chunk.js.map",
+    "runtime-main.js": "/cleverpytest_typescript/static/js/runtime-main.0d624e4a.js",
+    "runtime-main.js.map": "/cleverpytest_typescript/static/js/runtime-main.0d624e4a.js.map",
+    "static/js/2.e608e832.chunk.js": "/cleverpytest_typescript/static/js/2.e608e832.chunk.js",
+    "static/js/2.e608e832.chunk.js.map": "/cleverpytest_typescript/static/js/2.e608e832.chunk.js.map",
+    "index.html": "/cleverpytest_typescript/index.html",
+    "static/css/main.597ff3a8.chunk.css.map": "/cleverpytest_typescript/static/css/main.597ff3a8.chunk.css.map",
+    "static/js/2.e608e832.chunk.js.LICENSE.txt": "/cleverpytest_typescript/static/js/2.e608e832.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/cleverpytest_typescript/static/media/Ubuntu-Regular.fbdecfce.ttf",
+    "static/media/home.400c509f.png": "/cleverpytest_typescript/static/media/home.400c509f.png",
+    "static/media/infoC.b5e8f051.png": "/cleverpytest_typescript/static/media/infoC.b5e8f051.png",
+    "static/media/papeN.25f520c4.png": "/cleverpytest_typescript/static/media/papeN.25f520c4.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.5a8e133c.js",
-    "static/js/2.f3a390be.chunk.js",
-    "static/css/main.ab4b7f6d.chunk.css",
-    "static/js/main.293d2775.chunk.js"
+    "static/js/runtime-main.0d624e4a.js",
+    "static/js/2.e608e832.chunk.js",
+    "static/css/main.597ff3a8.chunk.css",
+    "static/js/main.f5892512.chunk.js"
   ]
 }
