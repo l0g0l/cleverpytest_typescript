@@ -1,6 +1,6 @@
 {
-    "homepage": "https://l0g0l.github.io/cleverpytest/",
-    "name": "cleverpytechnicaltest",
+    "homepage": "https://l0g0l.github.io/cleverpytest_typescript/",
+    "name": "cleverpytechnicaltest_typescript",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
