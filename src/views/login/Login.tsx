@@ -1,8 +1,9 @@
+//Change the library react-validation to reack-hook-form
 import { useState, ChangeEvent } from "react";
 import { Link, useNavigate } from 'react-router-dom'
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import * as Yup from 'yup';
+import * as Yup from 'yup';//validation schema
 import { useDispatch } from 'react-redux'
 import Header from "../../components/layout/header/Header";
 import home from '../../assets/home.png'
@@ -40,6 +41,7 @@ const Login = () => {
         resolver: yupResolver(validationSchema)
     });
 
+      //get input value
     const onChangeEmail = ({ target }: ChangeEvent<HTMLInputElement>) => {
         const email = target.value
         setEmail(email);
@@ -54,7 +56,7 @@ const Login = () => {
         console.log(JSON.stringify(data, null, 2));
         setMessage("");
         setLoading(true);
-
+        // store the data in the LocalStorage
         if (email && password) {
             if (localStorage.getItem("email") === email) {
                 const password_hash = crypto.createHash('sha256').update(password).digest('base64')

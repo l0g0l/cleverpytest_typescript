@@ -1,7 +1,8 @@
+//Change the library react-validation to reack-hook-form
 import { useState, ChangeEvent } from "react";
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import * as Yup from 'yup';
+import * as Yup from 'yup'; //validation schema
 import { Link } from 'react-router-dom'
 import Header from "../../components/layout/header/Header";
 const crypto = require('crypto');
@@ -52,6 +53,7 @@ const SignUp = () => {
         resolver: yupResolver(validationSchema)
     });
 
+    //get input value
     const onChangeUsername = ({ target }: ChangeEvent<HTMLInputElement>) => {
         const username = target.value
         setUsername(username);
@@ -73,7 +75,7 @@ const SignUp = () => {
 
     const onSubmit = (data: UserSubmitForm) => {
         console.log(JSON.stringify(data, null, 2));
-        //storage data in
+        // store the data in the LocalStorage
         if (username && email && password && confirmpswd) {
             if (localStorage.getItem("email") === email) {
                 setMessage('Registered user')
@@ -109,6 +111,7 @@ const SignUp = () => {
                             type="text"
                             {...register('username')}
                             onChange={onChangeUsername}
+                            value={username}
                             className={`input ${errors.username ? 'is-invalid' : ''}`}
                         />
                         <div className="alert">{errors.username?.message}</div>
@@ -120,6 +123,7 @@ const SignUp = () => {
                             type="text"
                             {...register('email')}
                             onChange={onChangeEmail}
+                            value={email}
                             className={`input ${errors.email ? 'is-invalid' : ''}`}
                         />
                         <div className="alert">{errors.email?.message}</div>
@@ -131,6 +135,7 @@ const SignUp = () => {
                             type="password"
                             {...register('password')}
                             onChange={onChangePassword}
+                            value={password}
                             className={`input ${errors.password ? 'is-invalid' : ''}`}
                         />
                         <div className="alert">{errors.password?.message}</div>
@@ -141,6 +146,7 @@ const SignUp = () => {
                             type="password"
                             {...register('confirmPassword')}
                             onChange={onChangeConfirmPswd}
+                            value={confirmpswd}
                             className={`input ${errors.confirmPassword ? 'is-invalid' : ''
                                 }`}
                         />
