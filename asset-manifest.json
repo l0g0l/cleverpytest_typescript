@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cleverpytest_typescript/static/css/main.597ff3a8.chunk.css",
+    "main.css": "/cleverpytest_typescript/static/css/main.b8ab9a5a.chunk.css",
     "main.js": "/cleverpytest_typescript/static/js/main.f5892512.chunk.js",
     "main.js.map": "/cleverpytest_typescript/static/js/main.f5892512.chunk.js.map",
     "runtime-main.js": "/cleverpytest_typescript/static/js/runtime-main.0d624e4a.js",
@@ -8,7 +8,7 @@
     "static/js/2.e608e832.chunk.js": "/cleverpytest_typescript/static/js/2.e608e832.chunk.js",
     "static/js/2.e608e832.chunk.js.map": "/cleverpytest_typescript/static/js/2.e608e832.chunk.js.map",
     "index.html": "/cleverpytest_typescript/index.html",
-    "static/css/main.597ff3a8.chunk.css.map": "/cleverpytest_typescript/static/css/main.597ff3a8.chunk.css.map",
+    "static/css/main.b8ab9a5a.chunk.css.map": "/cleverpytest_typescript/static/css/main.b8ab9a5a.chunk.css.map",
     "static/js/2.e608e832.chunk.js.LICENSE.txt": "/cleverpytest_typescript/static/js/2.e608e832.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/cleverpytest_typescript/static/media/Ubuntu-Regular.fbdecfce.ttf",
     "static/media/home.400c509f.png": "/cleverpytest_typescript/static/media/home.400c509f.png",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.0d624e4a.js",
     "static/js/2.e608e832.chunk.js",
-    "static/css/main.597ff3a8.chunk.css",
+    "static/css/main.b8ab9a5a.chunk.css",
     "static/js/main.f5892512.chunk.js"
   ]
 }
