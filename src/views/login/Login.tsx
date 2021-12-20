@@ -44,7 +44,7 @@ const Login = () => {
         console.log(JSON.stringify(data, null, 2));
     };
 
-    /*     const dispatch = useDispatch(); //llamo a la función para poder utilizarla
+    /*  const dispatch = useDispatch(); //llamo a la función para poder utilizarla
         const form = useRef();
         const checkBtn = useRef();
         const [email, setEmail] = useState("");
@@ -118,7 +118,6 @@ const Login = () => {
                             {...register('email')}
                             className={`input ${errors.email ? 'is-invalid' : ''}`}
                         />
-                        <div className="invalid-feedback">{errors.email?.message}</div>
                     </div>
 
                     <div className="formdiv">
@@ -128,8 +127,8 @@ const Login = () => {
                             {...register('password')}
                             className={`input ${errors.password ? 'is-invalid' : ''}`}
                         />
-                        <div className="invalid-feedback">{errors.password?.message}</div>
                     </div>
+                        <div className="alert">{errors.password?.message}</div>
 
 
 
