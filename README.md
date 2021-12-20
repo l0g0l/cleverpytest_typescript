@@ -153,7 +153,7 @@ CSS styles and animations
 <br>
 <br>
 <img src="/src/assets/mobile.gif" alt="view mobile size " width="150"  >
-<img src="/src/assets/desktop.gif" alt="view desktop size " width="500" >
+
 
 
 <br>
