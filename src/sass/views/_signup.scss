@@ -11,6 +11,11 @@
   background-color: #ccc;
   cursor: pointer;
 }
+.btn-reset {
+  background-color: #444;
+  color:$white;
+  margin-bottom: 0;
+}
 .success {
   margin-top: 0.1em;
   color: $link;

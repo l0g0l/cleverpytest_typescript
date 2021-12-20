@@ -5,7 +5,7 @@
   justify-content: center;
 }
 .header {
-  margin-top: 2em;
+  margin-top: 1.5em;
 }
 .container-welcome p > a {
   display: flex;
@@ -31,10 +31,24 @@
   }
 }
 .formdiv {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 1em;
 }
+.form-check {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+label {
+  font-size: 1rem;
+}
+.label-check {
+  font-size: 0.8rem;
+}
 .input {
-  height: 2rem;
+  height: 1.4rem;
   border-radius: 6px;
   margin-top: 0.3em;
   border: 0.01em solid #ccc;
@@ -47,7 +61,13 @@
   cursor: pointer;
 }
 .alert {
-  margin-top: 0.1em;
-  color: $alert;
+   color: $alert;
   text-align: center;
+  font-size: 0.8rem;
+}
+.alert-check {
+  margin-bottom: 1em;
+}
+.form-p {
+margin-bottom: 1em;
 }
