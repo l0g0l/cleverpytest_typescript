@@ -3,7 +3,7 @@
 <p align="center">
 <h4 align="center">Cleverpy Technical Test - TypeScript</h4>
   <p align="center">
-    <a href="https://l0g0l.github.io/cleverpytest/">View Web Application</a>
+    <a href="https://l0g0l.github.io/cleverpytest_typescript/">View Web Application</a>
   </p>
   <p align="center">
 <img src="https://www.codefactor.io/repository/github/l0g0l/cleverpytest/badge" alt="Codefactor Grade">

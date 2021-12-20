@@ -9,7 +9,7 @@ interface props {
     dataposts: Post
     datausers:User
     datacomments:Array<Comment>
-    delete_post:Function 
+    delete_post:Function
     islogged:Boolean
 
 }
