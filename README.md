@@ -6,10 +6,12 @@
     <a href="https://l0g0l.github.io/cleverpytest_typescript/">View Web Application</a>
   </p>
   <p align="center">
-<img src="https://www.codefactor.io/repository/github/l0g0l/cleverpytest/badge" alt="Codefactor Grade">
+<img src="https://www.codefactor.io/repository/github/l0g0l/cleverpytest_typescript/badge/main" alt="Codefactor Grade">
 </p>
 <p align="center">
-<img src="https://sonarcloud.io/api/project_badges/measure?project=l0g0l_cleverpytest&metric=alert_status" alt="Sonar Quality Gate"></p>
+<img src="https://sonarcloud.io/api/project_badges/measure?project=l0g0l_cleverpytest_typescript&metric=alert_status" alt="Sonar Quality Gate"></p>
+<p align="center">
+<img src="./src/assets/accesibilidad.png" alt="Accesibilidad" width="400"></p>
 
 
 <!-- TABLE OF CONTENTS -->
