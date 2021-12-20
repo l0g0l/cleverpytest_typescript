@@ -11,7 +11,7 @@
 <p align="center">
 <img src="https://sonarcloud.io/api/project_badges/measure?project=l0g0l_cleverpytest_typescript&metric=alert_status" alt="Sonar Quality Gate"></p>
 <p align="center">
-<img src="./src/assets/accesibilidad.png" alt="Accesibilidad" width="400"></p>
+<img src="./src/assets/accesibilidad.png" alt="Accesibilidad" width="350"></p>
 
 
 <!-- TABLE OF CONTENTS -->
@@ -152,7 +152,7 @@ CSS styles and animations
 <img src="/src/assets/CleverPyAppDesign.png" alt="view mobile size " width="700"  >
 <br>
 <br>
-<img src="/src/assets/mobile.gif" alt="view mobile size " width="150"  >
+<img src="/src/assets/mobile.gif" alt="view mobile size " width="200">
 
 
 
