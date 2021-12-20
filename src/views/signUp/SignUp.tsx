@@ -89,6 +89,7 @@ const SignUp = () => {
                 setSuccessfull(true)
             }
         }
+        //reset inputs form
         setUsername("")
         setEmail("")
         setPassword("")

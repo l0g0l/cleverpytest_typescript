@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-<h4 align="center">Cleverpy Technical Test</h4>
+<h4 align="center">Cleverpy Technical Test - TypeScript</h4>
   <p align="center">
     <a href="https://l0g0l.github.io/cleverpytest/">View Web Application</a>
   </p>
@@ -43,21 +43,14 @@ npm i sass
 
 Sass is a CSS preprocessor, which adds special features such as variables, nested rules and mixins (sometimes referred to as syntactic sugar) into regular CSS. The aim is to make the coding process simpler and more efficient.
 
-### [React-validation](https://www.npmjs.com/package/react-validation)
+### [React Hook Form](https://react-hook-form.com/)
 
-npm i react-validation
+npm i react-hook-form
 
-Component to provide simple form validation for React components. It uses the Controlled Components approach for validation.
 
-It is not easy to validate forms with React. The reason is a one-way data flow style. In this case we can't affect forms from the inputs in an easy way. React-validation provides several components which are 'connected' to the form via the input's method attached by the Form component.
+React-hook-form is a library that helps you validate forms in React. It's a minimal library without any other dependencies, It's performant and straightforward to use.
 
-### [Validator](https://www.npmjs.com/package/validator)
 
-npm i validator
-
-This library validates and sanitizes strings only.
-
-If you're not sure if your input is a string, coerce it using input + ''. Passing anything other than a string will result in an error.  
 
 ### Prerequisites
 
@@ -69,7 +62,7 @@ If you're not sure if your input is a string, coerce it using input + ''. Passin
 ###### Frontend
 
 ```sh
-`cd cleverpytest` go into the folder
+`cd cleverpytest_TypeScript` go into the folder
 ```
 
 Install dependecies and devDependencies

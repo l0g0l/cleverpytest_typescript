@@ -14,7 +14,6 @@ type UserLoginForm = {
     password: string;
 };
 
-
 const Login = () => {
 
     const [email, setEmail] = useState<string>("");
@@ -41,7 +40,7 @@ const Login = () => {
         resolver: yupResolver(validationSchema)
     });
 
-      //get input value
+    //get input value
     const onChangeEmail = ({ target }: ChangeEvent<HTMLInputElement>) => {
         const email = target.value
         setEmail(email);
@@ -56,7 +55,7 @@ const Login = () => {
         console.log(JSON.stringify(data, null, 2));
         setMessage("");
         setLoading(true);
-        // store the data in the LocalStorage
+        // check the data in the LocalStorage
         if (email && password) {
             if (localStorage.getItem("email") === email) {
                 const password_hash = crypto.createHash('sha256').update(password).digest('base64')
