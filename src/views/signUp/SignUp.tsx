@@ -8,7 +8,6 @@ import Header from "../../components/layout/header/Header";
 const crypto = require('crypto');
 
 type UserSubmitForm = {
-    fullname: string;
     username: string;
     email: string;
     password: string;
@@ -175,10 +174,11 @@ const SignUp = () => {
                         </button>
                         <button
                             type="button"
-                            onClick={() => reset()}
+                            onClick={() => reset({username:'', email:'', password:'', confirmPassword:'', acceptTerms:false })}
                             className="btn-signup btn-reset ">
                             Reset
                         </button>
+                       
                     </div>
                 </form>
                 <div>

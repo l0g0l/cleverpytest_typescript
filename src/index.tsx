@@ -9,7 +9,7 @@ import { postApp } from './store/reducers/postsReducers';
 import './main.scss'
 
 //Crea el store y se le pasa por parámetro la función de reducer. Creas el componente Provider y le pasas por props el store, este componente debe envolver a toda la aplicación
-const store = createStore(postApp)
+const store = createStore(postApp) //define el store en base  al combineReducers()
 
 ReactDOM.render(
   <Provider store={store}>

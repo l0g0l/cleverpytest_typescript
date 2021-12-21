@@ -1,4 +1,4 @@
-//Definimos los tipos de Actions, definimos la funcion del Reducer y 
+//Definimos los tipos de Actions, definimos la funcion del Reducer 
 import { Actions } from '../actions/index'
 import { ActionType } from '../actions-types/index'
 import { combineReducers } from 'redux';
@@ -16,7 +16,7 @@ export function removePost(post: number) {
 
 
 //Dispatch es la manera de poder actualizar el store
-//Reducer. Inicilizamos el state siempre, en este caso con un obj de posts [] y varaible de control que nos sirve para saber si los post están vacíos o no (false) y necesita el action como parámetros obligatorios
+//Reducer. Inicilizamos el state siempre, en este caso con un obj de posts [] y variable de control que nos sirve para saber si los post están vacíos o no (false) y necesita el action como parámetros obligatorios
 function posts(state = { posts: [], posts_loaded: false }, action: Actions) {
     switch (action.type) {
         case ActionType.LOAD_POSTS: //Action
@@ -97,7 +97,7 @@ function login(state = { is_logged: false }, action: Actions) {
     }
 }
 
-
+//Le dice al store cuantas en cuantas partes subdivides el store y cual es la funcion de reduce para cada parte
 export const postApp = combineReducers({
     posts: posts,
     users: users,
