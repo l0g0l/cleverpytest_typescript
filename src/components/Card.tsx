@@ -1,20 +1,20 @@
 import papeN from '../assets/papeN.png'
 import { useState } from 'react'
 import infoC from '../assets/infoC.png'
-import {User, Comment, Post} from '../components/layout/index';
+import { User, Comment, Post } from '../components/layout/index';
 
 
 
 interface props {
     dataposts: Post
-    datausers:User
-    datacomments:Array<Comment>
-    delete_post:Function
-    islogged:Boolean
+    datausers: User
+    datacomments: Array<Comment>
+    delete_post: Function
+    islogged: Boolean
 
 }
 
-const Card = ({ dataposts, datausers, datacomments, delete_post, islogged }:props) => {
+const Card = ({ dataposts, datausers, datacomments, delete_post, islogged }: props) => {
     //show the card and users content using props
 
     const [showProfile, setShowProfile] = useState(false)
@@ -74,7 +74,7 @@ const Card = ({ dataposts, datausers, datacomments, delete_post, islogged }:prop
                     <>
                         <div className="comments">
                             <ul>
-                                {datacomments.map(((item:Comment) => {
+                                {datacomments.map(((item: Comment) => {
                                     return (
                                         <li key={item.id}>
                                             <h5>{item.name}</h5>

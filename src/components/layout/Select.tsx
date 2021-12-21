@@ -1,19 +1,19 @@
 import { ChangeEvent } from 'react';
 import { Link } from 'react-router-dom'
-import {User} from './index';
+import { User } from './index';
 
 
 
 interface props {
     setuserfilter: Function
-    datausers:[]
+    datausers: []
 }
 
 
-const Select = ({ setuserfilter, datausers }:props) => {
+const Select = ({ setuserfilter, datausers }: props) => {
 
-    const handleChange = ({target}: ChangeEvent<HTMLSelectElement>) => {
-        const {value}=target
+    const handleChange = ({ target }: ChangeEvent<HTMLSelectElement>) => {
+        const { value } = target
 
         setuserfilter(value)
     }
@@ -27,7 +27,7 @@ const Select = ({ setuserfilter, datausers }:props) => {
             <div className="select">
                 <select name="users" id="users" onChange={handleChange}>
                     <option value="All" className="option1">All</option>
-                    {datausers.map(((item:User) => {
+                    {datausers.map(((item: User) => {
                         return (
                             <option style={{ color: item.color }} value={item.id} key={item.id}>{item.name}</option>
                         )
