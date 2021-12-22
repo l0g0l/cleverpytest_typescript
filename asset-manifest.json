@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cleverpytest_typescript/static/css/main.b8ab9a5a.chunk.css",
-    "main.js": "/cleverpytest_typescript/static/js/main.7ff7b374.chunk.js",
-    "main.js.map": "/cleverpytest_typescript/static/js/main.7ff7b374.chunk.js.map",
+    "main.js": "/cleverpytest_typescript/static/js/main.6add4178.chunk.js",
+    "main.js.map": "/cleverpytest_typescript/static/js/main.6add4178.chunk.js.map",
     "runtime-main.js": "/cleverpytest_typescript/static/js/runtime-main.0d624e4a.js",
     "runtime-main.js.map": "/cleverpytest_typescript/static/js/runtime-main.0d624e4a.js.map",
-    "static/js/2.e608e832.chunk.js": "/cleverpytest_typescript/static/js/2.e608e832.chunk.js",
-    "static/js/2.e608e832.chunk.js.map": "/cleverpytest_typescript/static/js/2.e608e832.chunk.js.map",
+    "static/js/2.0fe883fb.chunk.js": "/cleverpytest_typescript/static/js/2.0fe883fb.chunk.js",
+    "static/js/2.0fe883fb.chunk.js.map": "/cleverpytest_typescript/static/js/2.0fe883fb.chunk.js.map",
     "index.html": "/cleverpytest_typescript/index.html",
     "static/css/main.b8ab9a5a.chunk.css.map": "/cleverpytest_typescript/static/css/main.b8ab9a5a.chunk.css.map",
-    "static/js/2.e608e832.chunk.js.LICENSE.txt": "/cleverpytest_typescript/static/js/2.e608e832.chunk.js.LICENSE.txt",
+    "static/js/2.0fe883fb.chunk.js.LICENSE.txt": "/cleverpytest_typescript/static/js/2.0fe883fb.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/cleverpytest_typescript/static/media/Ubuntu-Regular.fbdecfce.ttf",
     "static/media/home.400c509f.png": "/cleverpytest_typescript/static/media/home.400c509f.png",
     "static/media/infoC.b5e8f051.png": "/cleverpytest_typescript/static/media/infoC.b5e8f051.png",
@@ -17,8 +17,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.0d624e4a.js",
-    "static/js/2.e608e832.chunk.js",
+    "static/js/2.0fe883fb.chunk.js",
     "static/css/main.b8ab9a5a.chunk.css",
-    "static/js/main.7ff7b374.chunk.js"
+    "static/js/main.6add4178.chunk.js"
   ]
 }
