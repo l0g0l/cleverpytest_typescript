@@ -1,7 +1,6 @@
 import * as React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import Routing from './config/Routes'
 //=========== REDUX ===========
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
@@ -14,7 +13,6 @@ const store = createStore(postApp) //define el store en base  al combineReducers
 ReactDOM.render(
   <Provider store={store}>
     <App />
-    <Routing />
   </Provider>,
   document.getElementById('root')
 );
