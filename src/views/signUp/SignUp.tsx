@@ -1,5 +1,5 @@
 //Change the library react-validation to reack-hook-form
-import { useState, ChangeEvent } from "react";
+import { useState} from "react";
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup'; //validation schema
@@ -16,11 +16,6 @@ type UserSubmitForm = {
 };
 
 const SignUp = () => {
-    const [username, setUsername] = useState<string>("")
-    const [email, setEmail] = useState<string>("");
-    const [password, setPassword] = useState<string>("");
-    const [confirmpswd, setConfirmpswd] = useState<string>("");
-
     // eslint-disable-next-line
     const [successfull, setSuccessfull] = useState<Boolean>(false);
     const [message, setMessage] = useState<string>("");
@@ -52,30 +47,10 @@ const SignUp = () => {
         resolver: yupResolver(validationSchema)
     });
 
-    //get input value
-    const onChangeUsername = ({ target }: ChangeEvent<HTMLInputElement>) => {
-        const username = target.value
-        setUsername(username);
-    };
-    const onChangeEmail = ({ target }: ChangeEvent<HTMLInputElement>) => {
-        const email = target.value
-        setEmail(email);
-    };
-    const onChangePassword = ({ target }: ChangeEvent<HTMLInputElement>) => {
-        const password = target.value
-        setPassword(password);
-    };
 
-    const onChangeConfirmPswd = ({ target }: ChangeEvent<HTMLInputElement>) => {
-        const confirmpswd = target.value
-        setConfirmpswd(confirmpswd);
-    };
-
-
-    const onSubmit = (data: UserSubmitForm) => {
-        console.log(JSON.stringify(data, null, 2));
+    const onSubmit = handleSubmit(({ username, email, password, confirmPassword, acceptTerms }) => {
         // store the data in the LocalStorage
-        if (username && email && password && confirmpswd) {
+        if (username && email && password && confirmPassword && acceptTerms) {
             if (localStorage.getItem("email") === email) {
                 setMessage('Registered user')
                 setSuccessfull(false)
@@ -88,12 +63,7 @@ const SignUp = () => {
                 setSuccessfull(true)
             }
         }
-        //reset inputs form
-        setUsername("")
-        setEmail("")
-        setPassword("")
-        setConfirmpswd("")
-    };
+    });
 
 
     return (
@@ -104,14 +74,12 @@ const SignUp = () => {
                 </header>
             </div>
             <main>
-                <form onSubmit={handleSubmit(onSubmit)}>
+                <form onSubmit={onSubmit}>
                     <div className="formdiv">
                         <label>Username</label>
                         <input
                             type="text"
                             {...register('username')}
-                            onChange={onChangeUsername}
-                            value={username}
                             className={`input ${errors.username ? 'is-invalid' : ''}`}
                         />
                         <div className="alert">{errors.username?.message}</div>
@@ -122,8 +90,6 @@ const SignUp = () => {
                         <input
                             type="text"
                             {...register('email')}
-                            onChange={onChangeEmail}
-                            value={email}
                             className={`input ${errors.email ? 'is-invalid' : ''}`}
                         />
                         <div className="alert">{errors.email?.message}</div>
@@ -134,8 +100,6 @@ const SignUp = () => {
                         <input
                             type="password"
                             {...register('password')}
-                            onChange={onChangePassword}
-                            value={password}
                             className={`input ${errors.password ? 'is-invalid' : ''}`}
                         />
                         <div className="alert">{errors.password?.message}</div>
@@ -145,8 +109,6 @@ const SignUp = () => {
                         <input
                             type="password"
                             {...register('confirmPassword')}
-                            onChange={onChangeConfirmPswd}
-                            value={confirmpswd}
                             className={`input ${errors.confirmPassword ? 'is-invalid' : ''
                                 }`}
                         />
@@ -174,7 +136,7 @@ const SignUp = () => {
                         </button>
                         <button
                             type="button"
-                            onClick={() => reset({username:'', email:'', password:'', confirmPassword:'', acceptTerms:false })}
+                            onClick={() => reset()}
                             className="btn-signup btn-reset ">
                             Reset
                         </button>
